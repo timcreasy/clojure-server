@@ -5,6 +5,7 @@
             [clojure_api.view :as view]
             [clojure_api.api :as api]))
 
+; All routes
 (defroutes my_routes
   (GET "/" [] (view/index-view))
   (GET "/api/users" [] (api/get-users))
