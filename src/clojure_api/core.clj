@@ -1,6 +1,7 @@
 (ns clojure_api.core
   (:use compojure.core)
   (:require [compojure.route :as route]
+            [ring.middleware.json :refer [wrap-json-response]]
             [clojure_api.view :as view]
             [clojure_api.api :as api]))
 
